@@ -441,7 +441,7 @@ img.clients:hover{
 }
 
 .contact .text{
-    padding: 20px 40px;
+    padding: 0px 40px;
 }
 .info{
     margin: 40px 0 ;
@@ -455,6 +455,7 @@ textarea{
 }
 .infobox{
     box-shadow: 0 0 24px 0 rgba(127, 137, 0, 0.25);
+    padding: 16px 0;
 }
 .info i{
     font-size: 40px;
@@ -592,7 +593,7 @@ footer{
 
 @media (max-width:768px){
     #hero{
-        height: 100vh;
+        height: 120vh;
         text-align: center;
     }
     #hero h1{

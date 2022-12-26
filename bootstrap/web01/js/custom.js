@@ -1,6 +1,13 @@
 $(function(){
    AOS.init(); 
 
+  /* if($(window).Width()<768){
+      $('.card').css({
+         justifyContent:'center',
+         flexDirection:''
+      })
+   }
+*/
    $('#portfolio-filters  li').click(function(){
       let filter = $(this).data('filter');
       $('#portfolio-filters>li').removeClass('active');
@@ -13,7 +20,9 @@ $(function(){
       }
       
    })
+
    let mobile = false
+
    $('.mobile-nav-toggle1').click(function(){
       mobile = true;
       $('.navbar ul').animate({
@@ -31,6 +40,7 @@ $(function(){
          }, 500);
       $(this).hide();
       $('.mobile-nav-toggle1').show();
+      $('.dropdown ul').removeClass('show')
    })
   
    $('.nav-link').click(function(e){
