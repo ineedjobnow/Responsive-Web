@@ -70,11 +70,22 @@ a:hover{
 .navbar li{
     position: relative;
 }
-.navbar a, .navbar a:focus{
+.navbar a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    padding: 10px 0px 10px 30px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+    transition: all 0.3s
+}
+.navbar .members:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px 10px 30px;
     font-size: 1em;
     font-weight: 400;
     color: #fff;
@@ -84,12 +95,12 @@ a:hover{
 .navbar a i, .navbar a:focus i{
     margin-left:5px
 }
-.navbar a:hover, .navbar a:focus,
-.navbar .active, .navbar .active:focus,
+.navbar a:hover,
+.navbar .active,
 .navbar li:hover>a{
     color: #73c5eb;
 }
-.navbar .members, .navbar .members:focus:hover{
+.navbar .members{
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 50px;
@@ -617,6 +628,9 @@ footer{
         width: 100%;
         padding-left: 0;
     }
+    .navbar .members:focus,.navbar .members:hover{
+        justify-content: center;
+    }
 
 }
 
@@ -666,5 +680,5 @@ footer{
         margin-left: 0px;
     }
 }
-/*     */
+
 
