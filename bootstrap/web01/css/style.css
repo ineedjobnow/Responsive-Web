@@ -159,6 +159,9 @@ a:hover{
 img.clients:hover{
     opacity: 0.6;
 }
+img.clients{
+    width: 60%;
+}
 
 /**  mobile nav **/
 .mobile-nav-toggle1{
